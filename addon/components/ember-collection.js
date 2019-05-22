@@ -227,7 +227,7 @@ export default Component.extend({
         // console.log('ember-collection sendAction scroll-change', scrollTop);
         // TODO: Migrate to closure actions...
         // eslint-disable-next-line
-        this.sendAction('scroll-change', scrollLeft, scrollTop);
+        this['scroll-change'](scrollLeft, scrollTop);
       } else {
         if (scrollLeft !== this._scrollLeft ||
             scrollTop !== this._scrollTop) {
